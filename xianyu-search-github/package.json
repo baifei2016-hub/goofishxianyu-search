@@ -1,0 +1,43 @@
+{
+  "name": "xianyu-search",
+  "version": "1.0.5",
+  "description": "基于Selenium的闲鱼（goofish.com）自动化搜索技能，支持关键词搜索、价格筛选、个人闲置过滤，并生成可点击的商品链接",
+  "main": "xianyu_clickable_links.py",
+  "scripts": {
+    "test": "python3 xianyu_clickable_links.py \"闲鱼搜\" \"测试\" 100 200"
+  },
+  "keywords": [
+    "闲鱼",
+    "xianyu",
+    "goofish",
+    "搜索",
+    "自动化",
+    "selenium",
+    "二手",
+    "购物"
+  ],
+  "author": "OpenClaw用户",
+  "license": "MIT",
+  "dependencies": {
+    "selenium": "^4.0.0",
+    "requests": "^2.31.0",
+    "beautifulsoup4": "^4.12.0",
+    "lxml": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/skills/xianyu-search"
+  },
+  "bugs": {
+    "url": "https://github.com/openclaw/skills/issues"
+  },
+  "homepage": "https://clawhub.com/skills/xianyu-search",
+  "openclaw": {
+    "skill": true,
+    "trigger": "闲鱼搜",
+    "category": "购物",
+    "platforms": ["macos", "linux", "windows"],
+    "requirements": ["chrome", "chromedriver"],
+    "permissions": ["browser", "filesystem", "network"]
+  }
+}
